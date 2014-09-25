@@ -1,0 +1,21 @@
+<html>
+<body>
+	Enter city
+<form action="/form" method="post" >
+	<input type="text" name="message" style="inline" style="color:#888;" 
+    value="Put your city name in here!" onfocus="inputFocus(this)" onblur="inputBlur(this)">
+    <br>
+	<input type="submit" style="margin-left:55px">
+
+</form>
+<script>
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+}
+</script>
+</body>
+</html>
+
